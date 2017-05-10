@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>{{title}}</h1>
+
+  <div class="card">
+    <p>
+      Index: {{selectedIndex}}
+    </p>
+<!--
+(selectedIndexChange)="selectedIndex = $event"
+-->
+    <tabbed-pane [(selectedIndex)]="selectedIndex">
+    <tab title="Offene Rechnungen">
+      <ul>
+        <li>Gummihuhn</li>
+        <li>Seil</li>
+        <li>Karabiner</li>
+      </ul>
+    </tab>
+
+    <tab title="Bezahlte Rechnungen">
+      <ul>
+        <li>Doktortitel</li>
+        <li>Ghostwriter</li>
+        <li>Anwalt</li>
+      </ul>
+    </tab>
+    </tabbed-pane>
+
+  </div>
+</div>
+
+
+
